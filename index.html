@@ -3,41 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/17f821a36f.js" crossorigin="anonymous"></script>
   <title>Conference WebPage</title>
 </head>
 <body>
   <header>
-    <nav class="control-nav">
-      <ul class="social-icons">
-        <li>facebook</li>
-        <li>twitter</li>
+    <nav class="control-nav d-flex f-justify-cont-end">
+      <ul class="social-icons d-flex f-justify-cont-end">
+        <li><a href="#"><i class="fab fa-facebook-f"></a></i></li>
+        <li><a href="#"><i class="fab fa-twitter"></a></i></li> 
+      </ul>
+      <ul class="control-links d-flex">
+        <li><a href="#">English</a></li>
+        <li><a href="#">Account</a></li> 
+        <li><a href="#">Log in</a></li> 
       </ul>
     </nav>
-    <nav class="browse-nav">
-      <img class ="conference-logo" src="" alt="conference-logo">
-      <ul class="control-links">
-        <li>About</li>
-        <li>Tickets</li>
-        <li>Campaign</li>
+    <nav class="browse-nav d-flex f-align-items-center f-justify-cont-between">
+      <a href="#"><img class ="conference-logo" src="./images/GDC_logo_blue_168x60_1_0.png" alt="conference-logo"></a>
+      <ul class="control-links d-flex">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Tickets</a></li>
       </ul>
+      <div>
+        <a href="#">Campaign</a>
+      </div>
     </nav>
+  </header>
   <main>
     <section class="intro">
-      <h2>hello world</h2>
-      <h1>CONFERENCE WEBPAGE TITLE</h1>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempore asperiores repudiandae totam odio, libero, 
-          suscipit enim deserunt consequuntur earum dolorum officia maxime, sit harum. Esse deleniti reprehenderit suscipit consectetur.</p>
-      </div>
-      <div>
-        <h2>dates from until</h2>
-        <h3>where it is going to be held</h3>
+      <div class="container">
+        <h2 class="greeting">"Hello! Sharing world"</h2>
+        <h1>CREATIVE COMMONS <br> GLOBAL SUMMIT <br> 2015</h1>
+        <div class="info">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempore asperiores repudiandae totam odio, libero, 
+            suscipit enim deserunt consequuntur earum dolorum officia maxime, sit harum. Esse deleniti reprehenderit suscipit consectetur.</p>
+        </div>
+        <div>
+          <h2 class="font-cocogoose">2015.10.20(THU) ~ 21(FRI)</h2>
+          <h3>@National Museum of Korea</h3>
+        </div>
       </div>
     </section>
     <section class="main-program">
       <h3>Main Program</h3>
-      <div>
         <article>
           <div>
             <img src="" alt="">
@@ -134,6 +146,7 @@
       <img src="" alt="">
       <img src="" alt="">
       <img src="" alt="">
+    </div>
     </section>
   </main>
   <footer>
@@ -141,7 +154,7 @@
     <span>copyright</span>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid alias repudiandae impedit id expedita debitis dignissimos. 
       Numquam, ipsam sint laboriosam, perferendis sed in velit unde porro dolorem officia aliquid incidunt.</p>
-    </footer>
-  </header>
+  </footer>
+  
 </body>
 </html>
