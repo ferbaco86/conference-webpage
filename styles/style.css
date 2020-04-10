@@ -6,7 +6,10 @@
 *::after {
   box-sizing: border-box;
 }
-
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 /* Remove default padding */
 ul[class],
 ol[class] {
@@ -183,7 +186,7 @@ select {
 
   .intro::after {
     content: "";
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     background-image: url(../images/run.gif);
     background-repeat: no-repeat;
     background-position: 70% 60%;
@@ -200,30 +203,28 @@ select {
 
   .intro::before {
     content: "";
-    background-color: #21d4fd;
-    background-image:  url(../images/02.png),
-    url(../images/04.png),
-    url(../images/06.png),
-    linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,65,253,1) 100%);
+    /* background-color: #21d4fd; */
+    background-image:  url(../images/01.png),
+    linear-gradient(0deg, rgba(34,193,195,1) 20%, rgba(45,65,253,1) 100%);
     background-repeat:repeat;
-    background-position: 100% 100%;
-    background-size: cover;
+    background-size: 2135px 1350px;
+    background-position: 70% 60%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 500%;
     height: 100%;
     z-index: -2;
     opacity: 0.2;
-    animation: anim 80s linear infinite;
+    animation: ground-anim 20s linear infinite;
   }
 
-  @keyframes anim {
+  @keyframes ground-anim {
     100% {
-      background-position: -450vw 0,
-                            -500vw 0,
-                            -300vw 0;
-    }
+      transform: 
+        translateX(-2100px);
+      }
+
   }
 
   .greeting {
@@ -233,6 +234,56 @@ select {
   .container {
     padding-top: 100px;
     padding-bottom: 180px;
+  }
+
+  .bg-container {
+    position: relative;
+  }
+
+  .bg-container::before {
+    content: "";
+    background-image:
+    url(../images/04.png);
+    background-repeat:repeat;
+    background-size: 2135px 1200px;
+    background-position: 70% 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.2;
+    animation: block-anim 70s linear infinite;
+  }
+
+  .bg-container::after {
+    content: "";
+    background-image:
+    url(../images/06.png);
+    background-repeat:repeat;
+    background-size: 2135px 1200px;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    animation: cloud-anim 20s linear infinite;
+  }
+
+  @keyframes block-anim {
+    100% {
+      transform: translateX(-7100px);
+    }
+  }
+
+  @keyframes cloud-anim {
+    100% {
+      transform: translateX(-1100px);
+    }
   }
 
   .info {
