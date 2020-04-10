@@ -82,7 +82,7 @@ select {
   font-family: 'Cocogoose Pro Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('/fonts/Cocogoose_trial'), url('/fonts/Cocogoose_trial.otf') format('woff');
+  src: local('../fonts/Cocogoose_trial'), url('../fonts/Cocogoose_trial.otf') format('woff');
   }
 
   .d-flex {
@@ -176,7 +176,54 @@ select {
   }
 
   .intro {
-    background-color: rgb(247, 236, 236);
+   
+    position: relative;
+    
+  }
+
+  .intro::after {
+    content: "";
+    background-color: cadetblue;
+    background-image: url(../images/run.gif);
+    background-repeat: no-repeat;
+    background-position: 70% 60%;
+    background-size: 100px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4; 
+  }
+  
+
+  .intro::before {
+    content: "";
+    background-color: #21d4fd;
+    background-image:  url(../images/02.png),
+    url(../images/04.png),
+    url(../images/06.png),
+    linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,65,253,1) 100%);
+    background-repeat:repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.2;
+    animation: anim 80s linear infinite;
+  }
+
+  @keyframes anim {
+    100% {
+      background-position: -450vw 0,
+                            -500vw 0,
+                            -300vw 0;
+    }
   }
 
   .greeting {
