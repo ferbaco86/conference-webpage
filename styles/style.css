@@ -110,11 +110,6 @@ select {
   display: grid;
 }
 
-.main-program-grid {
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-}
-
 .color-highlight {
   color: var(--highlight-color);
 }
@@ -347,14 +342,20 @@ h4 {
   opacity: 0.8;
 }
 
-.main-program h3 {
+.main-program h3,
+.featured-speakers h3 {
   padding: 50px 0 10px 0;
   margin-bottom: 50px;
   border-bottom: 1px solid var(--highlight-color);
   font-size: 1.5em;
 }
 
-.program-items article {
+.main-program-container {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.main-program-container article {
   background-color: rgba(254, 255, 255, 0.1);
   margin: 3px;
   text-align: center;
@@ -375,5 +376,43 @@ h4 {
 
 .main-program-link {
   text-transform: uppercase;
-  padding: 80px 0;
+  margin: 80px 0;
+}
+
+.featured-speakers-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.featured-speakers-container article {
+  margin-bottom: 80px;
+  min-width: 380px;
+}
+
+.f-s-c-image-container {
+  padding-right: 20px;
+  padding-left: 40px;
+  max-width: 225px;
+  position: relative;
+}
+
+.f-s-c-image-container::before {
+  content: "";
+
+  background-image: url(../images/alien-icon-blue.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 30%;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.f-s-c-image-container img {
+  border: 5px solid var(--highlight-color);
 }
