@@ -6,14 +6,19 @@
 *::after {
   box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 /* Remove default padding */
 ul[class],
 ol[class] {
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 /* Remove default margin */
@@ -23,8 +28,6 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
 li,
 figure,
 figcaption,
@@ -38,21 +41,16 @@ dd {
 body {
   --header-top-color: #272a31;
   --header-bottom-color: #fff;
-  --light-font-color: #d3d3d3; 
+  --light-font-color: #d3d3d3;
   --highlight-color: #ec5242;
-  font-family: 'Lato', sans-serif;
+
+  font-family: "Lato", sans-serif;
   color: var(--header-top-color);
   font-size: 16px;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-}
-
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-  list-style: none;
 }
 
 a {
@@ -82,213 +80,231 @@ select {
 /* END CSS RESET */
 
 @font-face {
-  font-family: 'Cocogoose Pro Regular';
+  font-family: "Cocogoose Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src: local('../fonts/Cocogoose_trial'), url('../fonts/Cocogoose_trial.otf') format('woff');
+  src:
+    local("../fonts/Cocogoose_trial"),
+    url("../fonts/Cocogoose_trial.otf") format("woff");
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-justify-cont-end {
+  justify-content: flex-end;
+}
+
+.f-justify-cont-center {
+  justify-content: center;
+}
+
+.f-justify-cont-between {
+  justify-content: space-between;
+}
+
+.f-align-items-center {
+  align-items: center;
+}
+
+.d-grid-5-1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.font-lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.font-lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.font-cocogoose {
+  font-family: "Cocogoose Pro Regular", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-family: "Cocogoose Pro Regular", sans-serif;
+  color: var(--highlight-color);
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.control-nav,
+.browse-nav,
+.intro,
+.main-program,
+.featured-speakers,
+.partners {
+  padding: 0 200px;
+}
+
+.control-nav {
+  background-color: var(--header-top-color);
+  color: var(--header-bottom-color);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.browse-nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: var(--header-top-color);
+}
+
+.control-links li {
+  padding-left: 20px;
+}
+
+.browse-nav ul > li {
+  padding-left: 65px;
+}
+
+.social-icons {
+  margin-right: 15px;
+}
+
+.fa-facebook-f {
+  padding-right: 20px;
+}
+
+.conference-logo {
+  width: 120px;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro::after {
+  content: "";
+  background-color: cadetblue;
+  background-image: url(../images/run.gif);
+  background-repeat: no-repeat;
+  background-position: 70% 60%;
+  background-size: 100px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.intro::before {
+  content: "";
+
+  /* background-color: #21d4fd; */
+  background-image:
+    url(../images/01.png),
+    linear-gradient(0deg, rgba(34, 193, 195, 1) 20%, rgba(45, 65, 253, 1) 100%);
+  background-repeat: repeat;
+  background-size: 2135px 1350px;
+  background-position: 70% 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.2;
+  animation: ground-anim 20s linear infinite;
+}
+
+@keyframes ground-anim {
+  100% {
+    transform: translateX(-2100px);
   }
+}
 
-  .d-flex {
-    display: flex;
+.greeting {
+  color: var(--highlight-color);
+}
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 180px;
+}
+
+.bg-container {
+  position: relative;
+}
+
+.bg-container::before {
+  content: "";
+  background-image: url(../images/04.png);
+  background-repeat: repeat;
+  background-size: 2135px 1200px;
+  background-position: 70% 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.2;
+  animation: block-anim 70s linear infinite;
+}
+
+.bg-container::after {
+  content: "";
+  background-image: url(../images/06.png);
+  background-repeat: repeat;
+  background-size: 2135px 1200px;
+  background-position: top center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  animation: cloud-anim 20s linear infinite;
+}
+
+@keyframes block-anim {
+  100% {
+    transform: translateX(-7100px);
   }
+}
 
-  .f-justify-cont-end {
-    justify-content: flex-end;
+@keyframes cloud-anim {
+  100% {
+    transform: translateX(-1100px);
   }
+}
 
-  .f-justify-cont-center {
-    justify-content: center;
-  }
+.info {
+  border: 1px solid white;
+  padding: 30px;
+  width: 60%;
+  margin-bottom: 35px;
+}
 
-  .f-justify-cont-between {
-    justify-content: space-between;
-  }
+.main-program {
+  background-color: var(--header-top-color);
+  color: white;
+}
 
-  .f-align-items-center {
-    align-items: center;
-  }
+.main-program h3 {
+  padding-top: 50px;
+  border-bottom: 1px solid var(--highlight-color);
+}
 
-  .d-grid {
-    display: grid;
-  }
-
-  .font-lato-regular {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-  }
-
-  .font-lato-bold {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-  }
-
-  .font-cocogoose {
-    font-family: 'Cocogoose Pro Regular';
-  }
-
-  h1 {
-    font-size: 4em;
-    line-height: 1;
-    margin-bottom: 10px;
-    font-family: 'Cocogoose Pro Regular';
-    color: var(--highlight-color);
-  }
-
-  h2 {
-    font-size: 2.5em;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-
-  .control-nav, .browse-nav, .intro, .main-program, .featured-speakers, .partners {
-    padding: 0 200px;
-  }
-
-  .control-nav {
-    background-color: var(--header-top-color);
-    color: var(--header-bottom-color);
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-
-  .browse-nav {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: var(--header-top-color);
-  }
-
-  .browse-nav ul>li {
-    padding-left: 65px;
-  }
-
-  .social-icons {
-    margin-right: 15px;
-  }
-
-  .control-links li {
-    padding-left: 20px;
-
-  }
-
-  .fa-facebook-f {
-    padding-right: 20px;
-  }
-
-  .conference-logo {
-    width: 120px;
-  }
-
-  .intro {
-   
-    position: relative;
-    
-  }
-
-  .intro::after {
-    content: "";
-    /* background-color: cadetblue; */
-    background-image: url(../images/run.gif);
-    background-repeat: no-repeat;
-    background-position: 70% 60%;
-    background-size: 100px 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.4; 
-  }
-  
-
-  .intro::before {
-    content: "";
-    /* background-color: #21d4fd; */
-    background-image:  url(../images/01.png),
-    linear-gradient(0deg, rgba(34,193,195,1) 20%, rgba(45,65,253,1) 100%);
-    background-repeat:repeat;
-    background-size: 2135px 1350px;
-    background-position: 70% 60%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500%;
-    height: 100%;
-    z-index: -2;
-    opacity: 0.2;
-    animation: ground-anim 20s linear infinite;
-  }
-
-  @keyframes ground-anim {
-    100% {
-      transform: 
-        translateX(-2100px);
-      }
-
-  }
-
-  .greeting {
-    color: var(--highlight-color);
-  }
-
-  .container {
-    padding-top: 100px;
-    padding-bottom: 180px;
-  }
-
-  .bg-container {
-    position: relative;
-  }
-
-  .bg-container::before {
-    content: "";
-    background-image:
-    url(../images/04.png);
-    background-repeat:repeat;
-    background-size: 2135px 1200px;
-    background-position: 70% 60%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500%;
-    height: 100%;
-    z-index: -2;
-    opacity: 0.2;
-    animation: block-anim 70s linear infinite;
-  }
-
-  .bg-container::after {
-    content: "";
-    background-image:
-    url(../images/06.png);
-    background-repeat:repeat;
-    background-size: 2135px 1200px;
-    background-position: top center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.3;
-    animation: cloud-anim 20s linear infinite;
-  }
-
-  @keyframes block-anim {
-    100% {
-      transform: translateX(-7100px);
-    }
-  }
-
-  @keyframes cloud-anim {
-    100% {
-      transform: translateX(-1100px);
-    }
-  }
-
-  .info {
-    border: 1px solid white;
-    padding: 30px;
-    width: 60%;
-    margin-bottom: 35px;
-  }
