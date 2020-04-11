@@ -39,13 +39,13 @@ dd {
 
 /* Set core body defaults */
 body {
-  --header-top-color: #272a31;
-  --header-bottom-color: #fff;
-  --light-font-color: #d3d3d3;
+  --dark-blue-color: #272a31;
+  --white-color: #fff;
+  --light-grey-color: #d3d3d3;
   --highlight-color: #ec5242;
 
   font-family: "Lato", sans-serif;
-  color: var(--header-top-color);
+  color: var(--dark-blue-color);
   font-size: 16px;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -61,12 +61,6 @@ a {
 /* Make images easier to work with */
 img {
   max-width: 100%;
-  display: block;
-}
-
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -112,10 +106,17 @@ select {
   align-items: center;
 }
 
-.d-grid-5-1 {
+.d-grid {
   display: grid;
+}
+
+.main-program-grid {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
+}
+
+.color-highlight {
+  color: var(--highlight-color);
 }
 
 .font-lato-regular {
@@ -146,6 +147,11 @@ h2 {
   margin-bottom: 10px;
 }
 
+h4 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
 .control-nav,
 .browse-nav,
 .intro,
@@ -156,8 +162,8 @@ h2 {
 }
 
 .control-nav {
-  background-color: var(--header-top-color);
-  color: var(--header-bottom-color);
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -165,7 +171,7 @@ h2 {
 .browse-nav {
   padding-top: 15px;
   padding-bottom: 15px;
-  color: var(--header-top-color);
+  color: var(--dark-blue-color);
 }
 
 .control-links li {
@@ -299,12 +305,69 @@ h2 {
 }
 
 .main-program {
-  background-color: var(--header-top-color);
+  background-image: linear-gradient(0deg, rgb(20, 24, 24) 20%, rgb(17, 18, 27) 100%);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
   color: white;
+  position: relative;
+  opacity: 0.9;
+}
+
+.main-program::before {
+  content: "";
+
+  /* background-color: #21d4fd; */
+  background-image: url(../images/controls-bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.4;
+}
+
+.main-program::after {
+  content: "";
+
+  background-color: var(--dark-blue-color);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.8;
 }
 
 .main-program h3 {
-  padding-top: 50px;
+  padding: 50px 0 10px 0;
+  margin-bottom: 50px;
   border-bottom: 1px solid var(--highlight-color);
+  font-size: 1.5em;
 }
 
+.program-items article {
+  background-color: rgba(254, 255, 255, 0.1);
+  margin: 3px;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
+.icon-container {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  padding-top: 20px;
+}
+
+.icon-mp-item {
+  max-width: 3em;
+}
