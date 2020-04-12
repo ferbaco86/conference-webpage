@@ -119,6 +119,14 @@ select {
   color: var(--highlight-color);
 }
 
+.color-light-grey {
+  color: var(--light-grey-color);
+}
+
+.bg-color-dark-blue {
+  background-color: var(--dark-blue-color);
+}
+
 .font-lato-regular {
   font-family: "Lato", sans-serif;
   font-weight: 400;
