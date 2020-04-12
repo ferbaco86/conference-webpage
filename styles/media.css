@@ -54,4 +54,21 @@
     max-height: 100%;
   }
 
+  .intro {
+    padding: 0 2%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container h1 {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+
 }

@@ -252,6 +252,10 @@ footer {
   padding-bottom: 180px;
 }
 
+.container h1 {
+  width: 65%;
+}
+
 .bg-container {
   position: relative;
 }
