@@ -54,6 +54,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--background-color);
+
   /* image-rendering: -webkit-optimize-contrast; */
 }
 
@@ -81,7 +82,8 @@ select {
   font-family: "Cocogoose Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("../fonts/Cocogoose_trial"),
+  src: 
+    local("../fonts/Cocogoose_trial"),
     url("../fonts/Cocogoose_trial.otf") format("woff");
 }
 
@@ -222,7 +224,8 @@ footer {
   content: "";
 
   /* background-color: #21d4fd; */
-  background-image: url(../images/01.png),
+  background-image: 
+    url(../images/01.png),
     linear-gradient(0deg, rgba(34, 193, 195, 1) 20%, rgba(45, 65, 253, 1) 100%);
   background-repeat: repeat;
   background-size: 2135px 1350px;
@@ -308,7 +311,8 @@ footer {
 }
 
 .main-program {
-  background-image: linear-gradient(
+  background-image: 
+    linear-gradient(
     0deg,
     rgb(20, 24, 24) 20%,
     rgb(17, 18, 27) 100%
@@ -340,7 +344,6 @@ footer {
 
 .main-program::after {
   content: "";
-
   background-color: var(--dark-blue-color);
   background-repeat: repeat;
   background-position: center;
@@ -429,7 +432,6 @@ footer {
 
 .f-s-c-image-container::before {
   content: "";
-
   background-image: url(../images/square-steam-logo.png);
   background-repeat: no-repeat;
   background-position: center;
