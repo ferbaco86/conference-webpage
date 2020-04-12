@@ -90,6 +90,13 @@
     min-width: 180px;
   }
 
+  .partners-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -104,5 +111,9 @@
 
   .f-s-c-info p {
     font-size: 0.8em;
+  }
+
+  .partners-container {
+    grid-template-columns: 1fr;
   }
 }
