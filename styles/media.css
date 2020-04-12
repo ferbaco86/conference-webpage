@@ -65,10 +65,44 @@
 
   .container h1 {
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .info {
     width: 100%;
   }
 
+  .main-program-container {
+    grid-template-columns: none;
+  }
+
+  .featured-speakers-container {
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+
+  .featured-speakers-container article {
+    min-width: 310px;
+  }
+
+  .f-s-c-image-container {
+    min-width: 180px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  
+  .container h1 {
+    font-size: 2.5em;
+  }
+
+  .container h2 {
+    font-size: 1.8em;
+  }
+
+  .f-s-c-info p {
+    font-size: 0.8em;
+  }
 }
