@@ -43,6 +43,8 @@ body {
   --white-color: #fff;
   --light-grey-color: #d3d3d3;
   --highlight-color: #ec5242;
+  --background-color: #f8f8f8;
+  --partner-sec-color: #424146;
 
   font-family: "Lato", sans-serif;
   color: var(--dark-blue-color);
@@ -51,6 +53,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: var(--background-color);
 }
 
 a {
@@ -80,6 +83,45 @@ select {
   src:
     local("../fonts/Cocogoose_trial"),
     url("../fonts/Cocogoose_trial.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../fonts/Motiva\ Sns\ W01\ XBd.otf") format("woff");
+}
+
+@font-face {
+  font-family: "EA logo";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../fonts/EA\ Logo.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Clarendon";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../fonts/Clarendon\ Regular.otf") format("woff");
+}
+
+.motiva-font {
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 3.5em;
+}
+
+.ea-logo-font {
+  font-family: "EA logo", serif;
+  font-size: 3.5em;
+}
+
+.clarendon-font {
+  font-family: "Clarendon", sans-serif;
+  font-size: 3.5em;
 }
 
 .d-flex {
@@ -147,6 +189,10 @@ h4 {
   margin-bottom: 10px;
 }
 
+hr {
+  max-width: 50px;
+}
+
 .control-nav,
 .browse-nav,
 .intro,
@@ -167,6 +213,7 @@ h4 {
   padding-top: 15px;
   padding-bottom: 15px;
   color: var(--dark-blue-color);
+  background-color: var(--white-color);
 }
 
 .control-links li {
@@ -343,11 +390,12 @@ h4 {
 }
 
 .main-program h3,
-.featured-speakers h3 {
+.featured-speakers h3,
+.partners h3 {
   padding: 50px 0 10px 0;
   margin-bottom: 50px;
-  border-bottom: 1px solid var(--highlight-color);
   font-size: 1.5em;
+  font-weight: 400;
 }
 
 .main-program-container {
@@ -379,6 +427,24 @@ h4 {
   margin: 80px 0;
 }
 
+.main-program-hr,
+.featured-speakers-hr {
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: -50px;
+}
+
+.featured-speakers-hr {
+  margin-bottom: 80px;
+}
+
+.featured-speakers-info-hr {
+  width: 100%;
+  margin-left: 0;
+  max-width: 30px;
+  border: 1px solid #999797;
+}
+
 .featured-speakers-container {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -392,14 +458,14 @@ h4 {
 .f-s-c-image-container {
   padding-right: 20px;
   padding-left: 40px;
-  max-width: 225px;
+  min-width: 225px;
   position: relative;
 }
 
 .f-s-c-image-container::before {
   content: "";
 
-  background-image: url(../images/alien-icon-blue.png);
+  background-image: url(../images/square-steam-logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -409,10 +475,49 @@ h4 {
   bottom: 0;
   width: 30%;
   height: 30%;
-  z-index: 2;
-  opacity: 0.8;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.xbox-icon-bg::before {
+  background-image: url(../images/Xbox-square-logo.png);
+}
+
+.blizzard-icon-bg::before {
+  background-image: url(../images/blizzard-square-logo.png);
+}
+
+.niantic-logo-bg::before {
+  background-image: url(../images/niantic.png);
+}
+
+.nintendo-logo-bg::before {
+  background-image: url(../images/nintendo-square-logo.png);
+}
+
+.unity-logo-bg::before {
+  background-image: url(../images/unity-square-logo.png);
 }
 
 .f-s-c-image-container img {
   border: 5px solid var(--highlight-color);
+}
+
+.f-s-c-info h4 {
+  margin: 0;
+}
+
+.f-s-c-info span{
+  font-style: italic;
+}
+
+.partners{
+  background-color: var(--partner-sec-color);
+  color: var(--light-grey-color);
+}
+
+.partners-container {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
 }
