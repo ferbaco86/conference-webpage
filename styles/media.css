@@ -1,0 +1,42 @@
+@media (max-width: 767px) {
+
+  .control-nav,
+  .browse-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    display: block;
+    padding-left: 3%;
+    z-index: 3;
+  }
+  
+  .mobile-menu-container-list li {
+    padding: 30px;
+  }
+  
+  .menu-icon {
+    display: inline-block;
+    background-image: url(../images/menu-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .mobile-menu-container {
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  input:checked ~ .mobile-menu-container {
+    max-height: 100%;
+  }
+
+}

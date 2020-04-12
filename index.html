@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/media.css">
   <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/17f821a36f.js" crossorigin="anonymous"></script>
@@ -11,6 +12,17 @@
 </head>
 <body>
   <header>
+    <nav class="mobile-menu">
+      <input type="checkbox" name="menu-state" id="menu-toggle">
+      <label for="menu-toggle"><span class="menu-icon"></span></label>
+      <div class="mobile-menu-container">
+        <ul class="mobile-menu-container-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Tickets</a></li>
+        </ul>
+      </div>
+    </nav>
     <nav class="control-nav d-flex f-justify-cont-end">
       <ul class="social-icons d-flex f-justify-cont-end">
         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>

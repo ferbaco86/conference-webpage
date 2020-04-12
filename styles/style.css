@@ -512,3 +512,7 @@ footer {
   font-weight: 300;
   padding-top: 10px;
 }
+
+.mobile-menu {
+  display: none;
+}
