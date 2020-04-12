@@ -206,7 +206,6 @@ footer {
 
 .intro::after {
   content: "";
-  background-color: cadetblue;
   background-image: url(../images/run.gif);
   background-repeat: no-repeat;
   background-position: 70% 60%;
@@ -222,8 +221,6 @@ footer {
 
 .intro::before {
   content: "";
-
-  /* background-color: #21d4fd; */
   background-image: 
     url(../images/01.png),
     linear-gradient(0deg, rgba(34, 193, 195, 1) 20%, rgba(45, 65, 253, 1) 100%);
@@ -233,7 +230,7 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 500%;
+  width: 900%;
   height: 100%;
   z-index: -2;
   opacity: 0.2;
@@ -247,7 +244,7 @@ footer {
 }
 
 .greeting {
-  color: var(--white-color);
+  color: var(--dark-blue-color);
 }
 
 .container {
@@ -268,7 +265,7 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 500%;
+  width: 900%;
   height: 100%;
   z-index: -2;
   opacity: 0.2;
@@ -327,8 +324,6 @@ footer {
 
 .main-program::before {
   content: "";
-
-  /* background-color: #21d4fd; */
   background-image: url(../images/controls-bg.png);
   background-repeat: repeat;
   background-position: center;
