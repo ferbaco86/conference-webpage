@@ -54,6 +54,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--background-color);
+  /* image-rendering: -webkit-optimize-contrast; */
 }
 
 a {
@@ -80,48 +81,8 @@ select {
   font-family: "Cocogoose Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("../fonts/Cocogoose_trial"),
+  src: local("../fonts/Cocogoose_trial"),
     url("../fonts/Cocogoose_trial.otf") format("woff");
-}
-
-@font-face {
-  font-family: "Motiva Sans";
-  font-style: normal;
-  font-weight: normal;
-  src:
-    url("../fonts/Motiva\ Sns\ W01\ XBd.otf") format("woff");
-}
-
-@font-face {
-  font-family: "EA logo";
-  font-style: normal;
-  font-weight: normal;
-  src:
-    url("../fonts/EA\ Logo.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Clarendon";
-  font-style: normal;
-  font-weight: normal;
-  src:
-    url("../fonts/Clarendon\ Regular.otf") format("woff");
-}
-
-.motiva-font {
-  font-family: "Motiva Sans", sans-serif;
-  font-size: 3.5em;
-}
-
-.ea-logo-font {
-  font-family: "EA logo", serif;
-  font-size: 3.5em;
-}
-
-.clarendon-font {
-  font-family: "Clarendon", sans-serif;
-  font-size: 3.5em;
 }
 
 .d-flex {
@@ -198,7 +159,8 @@ hr {
 .intro,
 .main-program,
 .featured-speakers,
-.partners {
+.partners,
+footer {
   padding: 0 10%;
 }
 
@@ -233,7 +195,7 @@ hr {
 }
 
 .conference-logo {
-  width: 120px;
+  width: 150px;
 }
 
 .intro {
@@ -260,8 +222,7 @@ hr {
   content: "";
 
   /* background-color: #21d4fd; */
-  background-image:
-    url(../images/01.png),
+  background-image: url(../images/01.png),
     linear-gradient(0deg, rgba(34, 193, 195, 1) 20%, rgba(45, 65, 253, 1) 100%);
   background-repeat: repeat;
   background-size: 2135px 1350px;
@@ -283,7 +244,7 @@ hr {
 }
 
 .greeting {
-  color: var(--highlight-color);
+  color: var(--white-color);
 }
 
 .container {
@@ -347,7 +308,11 @@ hr {
 }
 
 .main-program {
-  background-image: linear-gradient(0deg, rgb(20, 24, 24) 20%, rgb(17, 18, 27) 100%);
+  background-image: linear-gradient(
+    0deg,
+    rgb(20, 24, 24) 20%,
+    rgb(17, 18, 27) 100%
+  );
   background-repeat: repeat;
   background-position: center;
   background-size: contain;
@@ -507,17 +472,41 @@ hr {
   margin: 0;
 }
 
-.f-s-c-info span{
+.f-s-c-info span {
   font-style: italic;
 }
 
-.partners{
+.partners {
   background-color: var(--partner-sec-color);
   color: var(--light-grey-color);
 }
 
 .partners-container {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  gap: 20px;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 60px;
+}
+
+.partners-container img {
+  min-width: 145px;
+}
+
+.footer-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-container img {
+  margin-right: 20px;
+}
+
+.copyright-span {
+  font-size: 0.8em;
+}
+
+.copyright-summary {
+  font-weight: 300;
+  padding-top: 10px;
 }
