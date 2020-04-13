@@ -671,6 +671,7 @@ input[type="submit"] {
 
 .past-editions-img-container {
   max-width: 800px;
+  min-height: 200px;
   margin-bottom: 80px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
