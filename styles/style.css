@@ -82,7 +82,7 @@ select {
   font-family: "Cocogoose Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src: 
+  src:
     local("../fonts/Cocogoose_trial"),
     url("../fonts/Cocogoose_trial.otf") format("woff");
 }
@@ -234,7 +234,7 @@ footer {
 
 .intro::before {
   content: "";
-  background-image: 
+  background-image:
     url(../images/01.png),
     linear-gradient(0deg, rgba(34, 193, 195, 1) 20%, rgba(45, 65, 253, 1) 100%);
   background-repeat: repeat;
@@ -325,12 +325,12 @@ footer {
 }
 
 .main-program {
-  background-image: 
+  background-image:
     linear-gradient(
-    0deg,
-    rgb(20, 24, 24) 20%,
-    rgb(17, 18, 27) 100%
-  );
+      0deg,
+      rgb(20, 24, 24) 20%,
+      rgb(17, 18, 27) 100%
+    );
   background-repeat: repeat;
   background-position: center;
   background-size: contain;
@@ -541,7 +541,7 @@ td {
 
 .tickets-table,
 .gifts-table,
-th, 
+th,
 td {
   border: 1px solid var(--light-grey-color);
   text-align: center;
@@ -583,7 +583,7 @@ td {
   font-size: 1.5em;
 }
 
-input[type=submit] {
+input[type="submit"] {
   border: none;
   cursor: pointer;
   padding: 15px;
