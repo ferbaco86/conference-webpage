@@ -619,10 +619,6 @@ input[type="submit"] {
   padding-bottom: 80px;
 }
 
-/* .about-us-contact a {
-  text-decoration: underline;
-} */
-
 .about-us-contact span {
  font-size: 1.5em;
  margin-left: 3px;
@@ -631,15 +627,87 @@ input[type="submit"] {
 }
 
 .volunteer-program {
+  background-color: white;
+}
+
+.volunteer-program,
+.past-editions {
   text-align: center;
 }
 
-.volunteer-program p {
+.volunteer-program p,
+.past-editions p {
   padding-top: 10px;
   padding-bottom: 50px;
 }
 
-.volunteer-program h3 {
+.volunteer-program h3,
+.past-editions h3 {
   padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+.volunteer-program img {
+  border: 15px solid var(--background-color);
+  margin-bottom: 50px;
+}
+
+.past-editions-img-container {
+  max-width: 800px;
+  margin-bottom: 80px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1f;
+  gap: 20px;
+}
+
+.past-editions-img-container img {
+  height: 100%;
+}
+
+.past-editions-img-container-nyc,
+.past-editions-img-container-kyoto
+ {
+  position: relative;
+}
+
+.image-container-text-container {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  right: 0;
+  color: white;
+  z-index: 2;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.image-container-year {
+  display: block;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.image-container-city {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.past-editions-img-container-nyc::before,
+.past-editions-img-container-kyoto::before {
+  content: "";
+  background-color: #8F220E;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
 }
 

@@ -109,6 +109,10 @@
   .table-mobile {
     display: table;
   }
+
+  .past-editions-img-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 500px) {
