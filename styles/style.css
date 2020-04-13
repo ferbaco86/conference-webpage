@@ -550,7 +550,7 @@ td {
 
 th,
 td {
-  padding: 10px 30px;
+  padding: 10px 15px;
 }
 
 .tickets-table {
@@ -589,4 +589,8 @@ input[type=submit] {
   padding: 15px;
   border-bottom: 5px solid #a54338;
   color: white;
+}
+
+.table-mobile {
+  display: none;
 }

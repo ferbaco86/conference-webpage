@@ -97,6 +97,14 @@
     justify-items: center;
   }
 
+  .tickets-table {
+    display: none;
+  }
+
+  .table-mobile {
+    display: table;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -115,5 +123,13 @@
 
   .partners-container {
     grid-template-columns: 1fr;
+  }
+  
+  .tickets p,
+  .tickets-table,
+  .gifts-table,
+  .gifts p,
+  input[type=submit] {
+    font-size: 0.8em;
   }
 }
