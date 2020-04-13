@@ -127,6 +127,10 @@ select {
   background-color: var(--dark-blue-color);
 }
 
+.bg-color-highlight {
+  background-color: #ec5242;
+}
+
 .font-lato-regular {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -557,6 +561,10 @@ td {
   background-color: var(--white-color);
 }
 
+.gifts-table {
+  margin-bottom: 20px;
+}
+
 .gifts form {
   padding-bottom: 70px;
 }
@@ -572,4 +580,13 @@ td {
 .tickets h3,
 .gifts h3 {
   margin-top: 60px;
+  font-size: 1.5em;
+}
+
+input[type=submit] {
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  border-bottom: 5px solid #a54338;
+  color: white;
 }
