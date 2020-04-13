@@ -525,3 +525,8 @@ footer {
 .mobile-menu {
   display: none;
 }
+
+.tickets-table, th, td {
+  border: 2px solid black;
+  text-align: center;
+}
