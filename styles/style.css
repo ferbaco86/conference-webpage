@@ -162,6 +162,7 @@ h4 {
 
 hr {
   max-width: 50px;
+  width: 100%;
 }
 
 .control-nav,
@@ -526,12 +527,49 @@ footer {
   display: none;
 }
 
-.tickets-table, th, td {
-  border: 2px solid black;
-  text-align: center;
+th {
+  background-color: var(--background-color);
 }
 
-.tickets,
-.gifts {
+td {
+  background-color: white;
+}
+
+.tickets-table,
+.gifts-table,
+th, 
+td {
+  border: 1px solid var(--light-grey-color);
   text-align: center;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px 30px;
+}
+
+.tickets-table {
+  margin-bottom: 70px;
+}
+
+.gifts {
+  background-color: var(--white-color);
+}
+
+.gifts form {
+  padding-bottom: 70px;
+}
+
+.tickets p,
+.gifts p {
+  border: 1px solid var(--light-grey-color);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 40px;
+}
+
+.tickets h3,
+.gifts h3 {
+  margin-top: 60px;
 }
