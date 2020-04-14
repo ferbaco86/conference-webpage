@@ -64,6 +64,22 @@
     padding: 0 2%;
   }
 
+  .main-program-container article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    text-align: left;
+  }
+
+  .main-program-container article > h4 {
+    margin-right: 30px;
+  }
+
+  .icon-container {
+    width: unset;
+    text-align: unset;
+    margin-right: 30px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -123,6 +139,16 @@
 
   .container h2 {
     font-size: 1.8em;
+  }
+
+  .main-program-container article {
+    display: flex;
+    text-align: center;
+  }
+
+  .main-program-container article > h4,
+  .icon-container {
+    margin-right: 0;
   }
 
   .f-s-c-info p {

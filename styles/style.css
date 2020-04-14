@@ -50,7 +50,7 @@ body {
   font-size: 16px;
   min-height: 100vh;
   scroll-behavior: smooth;
-  line-height: 1.5;
+  line-height: 1.8;
   background-color: var(--background-color);
 }
 
@@ -155,7 +155,8 @@ h2 {
   margin-bottom: 10px;
 }
 
-h3 {
+h3,
+.tickets h1 {
   font-size: 1.5em;
   font-weight: 400;
 }
@@ -419,7 +420,7 @@ footer {
   background-color: rgba(254, 255, 255, 0.1);
   margin: 3px;
   text-align: center;
-  padding: 0 20px 20px 20px;
+  padding: 20px 20px;
   min-width: 145px;
   transition: transform 0.2s ease-out;
 }
@@ -430,10 +431,7 @@ footer {
 }
 
 .icon-container {
-  width: 100%;
-  text-align: center;
   align-self: center;
-  padding-top: 20px;
 }
 
 .icon-mp-item {
@@ -614,7 +612,7 @@ td {
   margin: 40px;
 }
 
-.tickets h3,
+.tickets h1,
 .gifts h3 {
   margin-top: 60px;
 }
