@@ -716,7 +716,7 @@ input[type="submit"]:hover {
 }
 
 .past-editions-img-container img {
-  height: 100%;
+  min-height: 100%;
 }
 
 .past-editions-img-container-nyc,
