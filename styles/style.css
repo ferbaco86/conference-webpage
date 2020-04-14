@@ -52,8 +52,6 @@ body {
   scroll-behavior: smooth;
   line-height: 1.5;
   background-color: var(--background-color);
-
-  /* image-rendering: -webkit-optimize-contrast; */
 }
 
 a {
@@ -208,7 +206,12 @@ footer {
 
 .browse-nav-join-link:hover {
   border: 2px solid var(--highlight-color);
-  padding: 20px
+  padding: 20px;
+}
+
+.about-us a,
+.volunteer-program a {
+  text-decoration: underline;
 }
 
 .control-nav a:hover,
@@ -402,6 +405,11 @@ footer {
   margin-bottom: 50px;
 }
 
+.featured-speakers-container article {
+  margin-bottom: 80px;
+  min-width: 380px;
+}
+
 .main-program-container {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
@@ -462,11 +470,6 @@ footer {
 .featured-speakers-container {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-}
-
-.featured-speakers-container article {
-  margin-bottom: 80px;
-  min-width: 380px;
 }
 
 .f-s-c-image-container {
@@ -630,7 +633,6 @@ input[type="submit"]:hover {
   transform: scale(1.1);
 }
 
-
 .table-mobile {
   display: none;
 }
@@ -671,16 +673,11 @@ input[type="submit"]:hover {
   padding-bottom: 80px;
 }
 
-.about-us a,
-.volunteer-program a {
-  text-decoration: underline;
-}
-
 .about-us-contact span {
- font-size: 1.5em;
- margin-left: 3px;
- padding-bottom: 1px;
- font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 3px;
+  padding-bottom: 1px;
+  font-weight: 300;
 }
 
 .volunteer-program {
@@ -716,7 +713,6 @@ input[type="submit"]:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   gap: 20px;
-  
 }
 
 .past-editions-img-container img {
@@ -724,8 +720,7 @@ input[type="submit"]:hover {
 }
 
 .past-editions-img-container-nyc,
-.past-editions-img-container-kyoto
- {
+.past-editions-img-container-kyoto {
   position: relative;
   transition: transform 0.2s ease-out;
 }
@@ -743,8 +738,6 @@ input[type="submit"]:hover {
   right: 0;
   color: white;
   z-index: 2;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .image-container-year {
@@ -764,7 +757,7 @@ input[type="submit"]:hover {
 .past-editions-img-container-nyc::before,
 .past-editions-img-container-kyoto::before {
   content: "";
-  background-color: #8F220E;
+  background-color: #8f220e;
   background-repeat: repeat;
   background-position: center;
   background-size: contain;
@@ -776,4 +769,3 @@ input[type="submit"]:hover {
   z-index: 1;
   opacity: 0.8;
 }
-

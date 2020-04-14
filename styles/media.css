@@ -41,11 +41,11 @@
   .mobile-menu-container::before {
     content: "";
     background-image:
-    linear-gradient(
-      0deg, 
-      rgba(211,211,211,1) 5%, 
-      rgba(235,234,234,1) 53%, 
-      rgba(255,255,255,1) 100%
+      linear-gradient(
+        0deg,
+        rgba(211, 211, 211, 1) 5%,
+        rgba(235, 234, 234, 1) 53%,
+        rgba(255, 255, 255, 1) 100%
       );
     position: absolute;
     top: 0;
