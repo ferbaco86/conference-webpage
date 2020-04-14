@@ -12,7 +12,7 @@ Website of a fictional Video Games Conference created using the design stablishe
 
 Here's the view of the Home, About and Tickets webpages on a Laptop/Desktop screen size:
 
-![Screenshots-full](https://user-images.githubusercontent.com/52765379/79185621-790b7c00-7de5-11ea-99c2-795696e44f37.png)
+![Screenshots-full](https://user-images.githubusercontent.com/52765379/79186898-dbb24700-7de8-11ea-9d5d-a43a6bd53fdc.png)
 
 This is the mobile view of the same webpages mentioned above:
 
