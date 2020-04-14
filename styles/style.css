@@ -40,7 +40,6 @@ dd {
 /* Set core body defaults */
 body {
   --dark-blue-color: #272a31;
-  --white-color: #fff;
   --light-grey-color: #d3d3d3;
   --highlight-color: #ec5242;
   --background-color: #f8f8f8;
@@ -51,7 +50,6 @@ body {
   font-size: 16px;
   min-height: 100vh;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--background-color);
 
@@ -170,6 +168,7 @@ h4 {
 }
 
 hr {
+  border: 1px solid var(--highlight-color);
   max-width: 50px;
   width: 100%;
 }
@@ -189,7 +188,7 @@ footer {
 
 .control-nav {
   background-color: var(--dark-blue-color);
-  color: var(--white-color);
+  color: white;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -198,7 +197,26 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
   color: var(--dark-blue-color);
-  background-color: var(--white-color);
+  background-color: white;
+}
+
+.control-nav a,
+.mobile-menu-container-list a,
+.browse-nav a {
+  transition: all 0.25s ease-out;
+}
+
+.browse-nav-join-link:hover {
+  border: 2px solid var(--highlight-color);
+  padding: 20px
+}
+
+.control-nav a:hover,
+.browse-nav a:hover,
+.mobile-menu-container-list a:hover {
+  color: var(--highlight-color);
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
 .control-links li {
@@ -395,6 +413,12 @@ footer {
   text-align: center;
   padding: 0 20px 20px 20px;
   min-width: 145px;
+  transition: transform 0.2s ease-out;
+}
+
+.main-program-container article:hover {
+  border: 2px solid white;
+  transform: scale(1.1);
 }
 
 .icon-container {
@@ -411,6 +435,10 @@ footer {
 .main-program-link {
   text-transform: uppercase;
   margin: 80px 0;
+}
+
+.main-program-link:hover {
+  text-decoration: underline;
 }
 
 .main-program-hr,
@@ -564,7 +592,7 @@ td {
 }
 
 .gifts {
-  background-color: var(--white-color);
+  background-color: white;
 }
 
 .gifts-table {
@@ -594,7 +622,14 @@ input[type="submit"] {
   padding: 15px;
   border-bottom: 5px solid #a54338;
   color: white;
+  transition: transform 0.3s ease-in-out;
 }
+
+input[type="submit"]:hover {
+  background-color: #d64a3a;
+  transform: scale(1.1);
+}
+
 
 .table-mobile {
   display: none;
@@ -634,6 +669,11 @@ input[type="submit"] {
 .about-us-contact {
   padding-top: 50px;
   padding-bottom: 80px;
+}
+
+.about-us a,
+.volunteer-program a {
+  text-decoration: underline;
 }
 
 .about-us-contact span {
@@ -676,6 +716,7 @@ input[type="submit"] {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   gap: 20px;
+  
 }
 
 .past-editions-img-container img {
@@ -686,6 +727,13 @@ input[type="submit"] {
 .past-editions-img-container-kyoto
  {
   position: relative;
+  transition: transform 0.2s ease-out;
+}
+
+.past-editions-img-container-nyc:hover,
+.past-editions-img-container-kyoto:hover {
+  transform: scale(1.1);
+  border: 5px solid var(--light-grey-color);
 }
 
 .image-container-text-container {
