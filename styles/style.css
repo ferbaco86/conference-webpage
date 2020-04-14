@@ -715,10 +715,6 @@ input[type="submit"]:hover {
   gap: 20px;
 }
 
-.past-editions-img-container img {
-  min-height: 100%;
-}
-
 .past-editions-img-container-nyc,
 .past-editions-img-container-kyoto {
   position: relative;
