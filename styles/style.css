@@ -127,6 +127,10 @@ select {
   color: var(--dark-blue-color);
 }
 
+.color-dark-grey {
+  color: var(--partner-sec-color);
+}
+
 .bg-color-highlight {
   background-color: #ec5242;
 }
@@ -586,7 +590,7 @@ td {
 
 .tickets h1,
 .gifts h3 {
-  margin-top: 60px;
+  margin-top: 75px;
 }
 
 input[type="submit"] {
