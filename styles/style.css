@@ -1,0 +1,734 @@
+/* CSS RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  --dark-blue-color: #272a31;
+  --light-grey-color: #d3d3d3;
+  --highlight-color: #ec5242;
+  --background-color: #f8f8f8;
+  --partner-sec-color: #424146;
+
+  font-family: "Lato", sans-serif;
+  color: var(--dark-blue-color);
+  font-size: 16px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.8;
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* END CSS RESET */
+
+@font-face {
+  font-family: "Cocogoose Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("../fonts/Cocogoose_trial"),
+    url("../fonts/Cocogoose_trial.otf") format("woff");
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-justify-cont-end {
+  justify-content: flex-end;
+}
+
+.f-justify-cont-center {
+  justify-content: center;
+}
+
+.f-justify-cont-between {
+  justify-content: space-between;
+}
+
+.f-align-items-center {
+  align-items: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.color-highlight {
+  color: var(--highlight-color);
+}
+
+.color-light-grey {
+  color: var(--light-grey-color);
+}
+
+.bg-color-dark-blue {
+  background-color: var(--dark-blue-color);
+}
+
+.color-dark-blue {
+  color: var(--dark-blue-color);
+}
+
+.color-dark-grey {
+  color: var(--partner-sec-color);
+}
+
+.bg-color-highlight {
+  background-color: #ec5242;
+}
+
+.font-lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.font-lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.font-cocogoose {
+  font-family: "Cocogoose Pro Regular", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1;
+  font-family: "Cocogoose Pro Regular", sans-serif;
+  color: var(--highlight-color);
+}
+
+h1,
+h2,
+h4 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+h3,
+.tickets h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+hr {
+  border: 1px solid var(--highlight-color);
+  max-width: 50px;
+  width: 100%;
+}
+
+.control-nav,
+.browse-nav,
+.intro,
+.main-program,
+.featured-speakers,
+.partners,
+.about-us,
+.volunteer-program,
+.past-editions,
+footer {
+  padding: 0 10%;
+}
+
+.pb-1 {
+  padding-bottom: 10px;
+}
+
+.pb-2 {
+  padding-bottom: 20px;
+}
+
+.pb-6 {
+  padding-bottom: 60px;
+}
+
+.pb-8 {
+  padding-bottom: 80px;
+}
+
+.pb-180 {
+  padding-bottom: 180px;
+}
+
+.pt-1 {
+  padding-top: 10px;
+}
+
+.pt-5 {
+  padding-top: 50px;
+}
+
+.pt-8 {
+  padding-top: 80px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pr-2 {
+  padding-right: 20px;
+}
+
+.pl-2 {
+  padding-left: 20px;
+}
+
+.pl-4 {
+  padding-left: 40px;
+}
+
+.pl-6 {
+  padding-left: 60px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-5 {
+  margin-bottom: 50px;
+}
+
+.mb-8 {
+  margin-bottom: 80px;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.control-nav {
+  height: 50px;
+}
+
+.browse-nav {
+  height: 80px;
+}
+
+.control-nav a,
+.mobile-menu-container-list a,
+.browse-nav a {
+  transition: all 0.25s ease-out;
+}
+
+.browse-nav-join-link:hover {
+  border: 2px solid var(--highlight-color);
+  padding: 20px;
+}
+
+.about-us a,
+.volunteer-program a {
+  text-decoration: underline;
+}
+
+.control-nav a:hover,
+.browse-nav a:hover,
+.mobile-menu-container-list a:hover {
+  color: var(--highlight-color);
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.social-icons {
+  margin-right: 15px;
+}
+
+.conference-logo {
+  width: 150px;
+}
+
+.bg-container,
+.intro,
+.main-program,
+.f-s-c-image-container,
+.about-us,
+.past-editions-img-container-nyc,
+.past-editions-img-container-kyoto {
+  position: relative;
+}
+
+.intro::after {
+  background-image: url(../images/run.gif);
+  background-repeat: no-repeat;
+  background-position: 70% 60%;
+  background-size: 100px 100px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.intro::before {
+  background-image:
+    url(../images/01.png),
+    linear-gradient(0deg, rgba(34, 193, 195, 1) 20%, rgba(45, 65, 253, 1) 100%);
+  background-repeat: repeat;
+  background-size: 2135px 1350px;
+  background-position: 70% 60%;
+  top: 0;
+  left: 0;
+  width: 900%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.2;
+  animation: ground-anim 20s linear infinite;
+}
+
+@keyframes ground-anim {
+  100% {
+    transform: translateX(-2100px);
+  }
+}
+
+.container h1 {
+  width: 65%;
+}
+
+.bg-container::before {
+  background-image: url(../images/04.png);
+  background-repeat: repeat;
+  background-size: 2135px 1200px;
+  background-position: 70% 60%;
+  top: 0;
+  left: 0;
+  width: 900%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.2;
+  animation: block-anim 70s linear infinite;
+}
+
+.bg-container::after {
+  background-image: url(../images/06.png);
+  background-repeat: repeat;
+  background-size: 2135px 1200px;
+  background-position: top center;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  animation: cloud-anim 20s linear infinite;
+}
+
+@keyframes block-anim {
+  100% {
+    transform: translateX(-7100px);
+  }
+}
+
+@keyframes cloud-anim {
+  100% {
+    transform: translateX(-1100px);
+  }
+}
+
+.info {
+  border: 1px solid white;
+  padding: 30px;
+  width: 60%;
+  margin-bottom: 35px;
+}
+
+.main-program {
+  background-image:
+    linear-gradient(
+      0deg,
+      rgb(20, 24, 24) 20%,
+      rgb(17, 18, 27) 100%
+    );
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.9;
+}
+
+.main-program::before {
+  background-image: url(../images/controls-bg.png);
+  z-index: -2;
+  opacity: 0.4;
+}
+
+.main-program::after {
+  background-color: var(--dark-blue-color);
+  z-index: -2;
+  opacity: 0.8;
+}
+
+.featured-speakers-container article {
+  min-width: 380px;
+}
+
+.main-program-container {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.main-program-container article {
+  background-color: rgba(254, 255, 255, 0.1);
+  margin: 3px;
+  text-align: center;
+  padding: 20px;
+  min-width: 145px;
+  transition: transform 0.2s ease-out;
+}
+
+.main-program-container article:hover {
+  border: 2px solid white;
+  transform: scale(1.1);
+}
+
+.icon-container {
+  align-self: center;
+}
+
+.icon-mp-item {
+  max-width: 3em;
+}
+
+.main-program-link {
+  text-transform: uppercase;
+  margin: 80px 0;
+}
+
+.main-program-link:hover {
+  text-decoration: underline;
+}
+
+.main-program-hr,
+.featured-speakers-hr {
+  margin-top: -50px;
+}
+
+.featured-speakers-info-hr {
+  margin-left: 0;
+  max-width: 30px;
+  border: 1px solid #999797;
+}
+
+.featured-speakers-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.f-s-c-image-container {
+  min-width: 225px;
+  max-width: 225px;
+}
+
+.f-s-c-image-container::before {
+  background-image: url(../images/square-steam-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: -30px;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 30%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.xbox-icon-bg::before {
+  background-image: url(../images/Xbox-square-logo.png);
+}
+
+.blizzard-icon-bg::before {
+  background-image: url(../images/blizzard-square-logo.png);
+}
+
+.niantic-logo-bg::before {
+  background-image: url(../images/niantic.png);
+}
+
+.nintendo-logo-bg::before {
+  background-image: url(../images/nintendo-square-logo.png);
+}
+
+.unity-logo-bg::before {
+  background-image: url(../images/unity-square-logo.png);
+}
+
+.f-s-c-image-container img {
+  border: 5px solid var(--highlight-color);
+}
+
+.f-s-c-info h4 {
+  margin: 0;
+}
+
+.f-s-c-info span {
+  font-style: italic;
+}
+
+.partners {
+  background-color: var(--partner-sec-color);
+}
+
+.partners-container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.partners-container img {
+  min-width: 145px;
+  max-width: 70%;
+}
+
+.footer-container img {
+  margin-right: 15%;
+}
+
+.copyright-span {
+  font-size: 0.8em;
+}
+
+.image-container-city,
+.about-us-contact span,
+.copyright-summary {
+  font-weight: 300;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+th {
+  background-color: var(--background-color);
+}
+
+td {
+  background-color: white;
+}
+
+.tickets-table,
+.gifts-table,
+th,
+td {
+  border: 1px solid var(--light-grey-color);
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px 15px;
+}
+
+.tickets p,
+.gifts p {
+  border: 1px solid var(--light-grey-color);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 40px;
+}
+
+.tickets h1,
+.gifts h3 {
+  margin-top: 75px;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  border-bottom: 5px solid #a54338;
+  transition: transform 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #d64a3a;
+  transform: scale(1.1);
+}
+
+.table-mobile {
+  display: none;
+}
+
+.about-us::before {
+  background-image: url(../images/icons-bg.png);
+  background-repeat: repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.about-us h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.about-us-info {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 30px;
+}
+
+.about-us-contact span {
+  font-size: 1.5em;
+  margin-left: 3px;
+  padding-bottom: 1px;
+}
+
+.volunteer-program,
+.past-editions {
+  text-align: center;
+}
+
+.volunteer-program img {
+  border: 15px solid var(--background-color);
+}
+
+.past-editions-img-container {
+  max-width: 800px;
+  min-height: 200px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+.past-editions-img-container-nyc,
+.past-editions-img-container-kyoto {
+  transition: transform 0.2s ease-out;
+}
+
+.past-editions-img-container-nyc:hover,
+.past-editions-img-container-kyoto:hover {
+  transform: scale(1.1);
+  border: 5px solid var(--light-grey-color);
+}
+
+.image-container-text-container {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.image-container-year {
+  display: block;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.image-container-city {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.past-editions-img-container-nyc::before,
+.past-editions-img-container-kyoto::before {
+  background-color: #8f220e;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.main-program::before,
+.main-program::after,
+.past-editions-img-container-nyc::before,
+.past-editions-img-container-kyoto::before {
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.intro::after,
+.about-us::before,
+.main-program::before,
+.main-program::after,
+.past-editions-img-container-nyc::before,
+.past-editions-img-container-kyoto::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-container::before,
+.bg-container::after,
+.f-s-c-image-container::before,
+.intro::before,
+.intro::after,
+.about-us::before,
+.main-program::before,
+.main-program::after,
+.past-editions-img-container-nyc::before,
+.past-editions-img-container-kyoto::before {
+  content: "";
+  position: absolute;
+}
