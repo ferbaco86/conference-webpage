@@ -268,6 +268,14 @@ footer {
   color: white;
 }
 
+.control-nav {
+  height: 50px;
+}
+
+.browse-nav {
+  height: 80px;
+}
+
 .control-nav a,
 .mobile-menu-container-list a,
 .browse-nav a {
