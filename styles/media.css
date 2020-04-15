@@ -1,24 +1,23 @@
 @media (max-width: 767px) {
-/* 
-  header {
-    background-color: #272a31;
-  } */
   .control-nav,
-  .browse-nav {
+  .browse-nav,
+  #menu-toggle,
+  .tickets-table {
     display: none;
+  }
+
+  .mobile-menu,
+  .mobile-menu-container-list,
+  .container,
+  .main-program-container article {
+    display: flex;
   }
 
   .mobile-menu {
     position: absolute;
-    display: flex;
     top: 0;
     padding-left: 3%;
-    /* padding-top: 2%; */
     z-index: 3;
-  }
-
-  .mobile-menu-container-list {
-    display: flex;
   }
 
   .mobile-menu-container-list li {
@@ -35,34 +34,12 @@
     cursor: pointer;
   }
 
-  #menu-toggle {
-    display: none;
-  }
-
   .mobile-menu-container {
     max-width: 0;
     overflow: hidden;
     position: relative;
     transition: max-width 0.5s ease-in-out;
   }
-
-  /* .mobile-menu-container::before {
-    content: "";
-    background-image:
-      linear-gradient(
-        0deg,
-        rgba(211, 211, 211, 1) 5%,
-        rgba(235, 234, 234, 1) 53%,
-        rgba(255, 255, 255, 1) 100%
-      );
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.8;
-    border-radius: 10px;
-  } */
 
   input:checked ~ .mobile-menu-container {
     max-width: 100vw;
@@ -78,37 +55,36 @@
     text-align: left;
   }
 
-  .main-program-container article > h4 {
+  .main-program-container article > h4,
+  .icon-container {
     margin-right: 30px;
   }
 
   .icon-container {
     width: unset;
     text-align: unset;
-    margin-right: 30px;
   }
 
   .container {
-    display: flex;
     flex-direction: column;
   }
 
   .container h1 {
-    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
+  .container h1,
   .info {
     width: 100%;
   }
 
-  .main-program-container {
+  .main-program-container,
+  .featured-speakers-container {
     grid-template-columns: none;
   }
 
   .featured-speakers-container {
-    grid-template-columns: none;
     grid-template-rows: none;
   }
 
@@ -125,10 +101,6 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     justify-items: center;
-  }
-
-  .tickets-table {
-    display: none;
   }
 
   .table-mobile {
@@ -159,14 +131,11 @@
     margin-right: 0;
   }
 
-  .f-s-c-info p {
-    font-size: 0.8em;
-  }
-
   .partners-container {
     grid-template-columns: 1fr;
   }
 
+  .f-s-c-info p,
   .tickets p,
   .tickets-table,
   .gifts-table,
