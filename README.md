@@ -51,6 +51,10 @@ Give a ⭐️ if you like this project!
 - Icons used in the background and favicon created by https://www.sketchappsources.com/contributor/ufukaydin
 - All companies logos and stock photos are used solely for educational purposes as this website was created without commercial means in mind.
 
+## Potential Features
+
+- Add backend functionality to the website
+
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
